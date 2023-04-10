@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versr</title>
+    <link rel="shorcut icon" href="https://images.unsplash.com/photo-1641945512896-271de0eaf90d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG9nbyUyMGNocmlzdGlhbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60">
+    <style>
+        body{
+            background-color: black;
+        }
+        h2 {
+            color: #fff;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+          }
+          
+          .card {
+            display: inline-flex;
+            position: relative;
+            width: 300px;
+            height: 340px;
+            margin: 20px;
+            perspective: 1000px;
+          }
+          
+          .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transition: transform 0.8s;
+          }
+          
+          .card-front {
+            background: url("https://images.unsplash.com/photo-1594100513700-659fa01ce822?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+          }
+          
+          .card-back {
+            background: url("https://images.unsplash.com/photo-1497621122273-f5cfb6065c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmlibGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
+            color: white;
+            transform: rotateY(180deg);
+            padding: 20px;
+            font-size: 1rem;
+          }
+          
+          .card:hover .card-front {
+            transform: rotateY(-180deg);
+          }
+          
+          .card:hover .card-back {
+            transform: rotateY(0deg);
+          }
+          
+          /* Media Queries */
+          @media screen and (max-width: 768px) {
+            .card {
+              width: 250px;
+              height: 300px;
+            }
+            
+            h2 {
+              font-size: 1.2rem;
+            }
+            
+            .card-front {
+              font-size: 1rem;
+            }
+            
+            .card-back {
+              font-size: 0.9rem;
+            }
+          }
+          
+          @media screen and (max-width: 480px) {
+            .card {
+              width: 200px;
+              height: 240px;
+            }
+            
+            h2 {
+              font-size: 1rem;
+            }
+            
+            .card-front {
+              font-size: 0.9rem;
+            }
+            
+            .card-back {
+              font-size: 0.8rem;
+            }
+          }
+    </style>
+    
+          
+    </style>
+</head>
+<body>
+    <div class="card-container">
+  <div class="card">
+    <div class="card-front">
+      <h2>1 Corinthians 13:4-7 </h2>
+    </div>
+    <div class="card-back">
+      <p>Love is patient and kind; love does not envy or boast; it is not arrogant or rude. 
+        It does not insist on its own way; it is not irritable or resentful; 
+        it does not rejoice at wrongdoing, but rejoices with the truth.
+         Love bears all things, believes all things, hopes all things, endures all things.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h2>Exodus 15:2</h2>
+    </div>
+    <div class="card-back">
+      <p>The Lord is my strength and my defense; he has become my salvation. He is my God, and I will praise him, my father's God, and I will exalt him.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h2>Psalm 50:1</h2>
+    </div>
+    <div class="card-back">
+      <p>The Mighty One, God, the Lord, speaks and summons the earth from the rising of the sun to the place where it sets.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h2> Hebrews 4:12</h2>
+    </div>
+    <div class="card-back">
+      <p>For the word of God is alive and active.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h2>  Isaiah 40:28</h2>
+    </div>
+    <div class="card-back">
+      <p>The Lord is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary, and his understanding no one can fathom.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h2>  Isaiah 40:28</h2>
+    </div>
+    <div class="card-back">
+      <p>The Lord is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary, and his understanding no one can fathom.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h2> Genesis 1:1  </h2>
+    </div>
+    <div class="card-back">
+      <p>In the beginning, God created the heavens and the earth.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-front">
+      <h2>John 14:1 </h2>
+    </div>
+    <div class="card-back">
+      <p>Do not let your hearts be troubled. You believe in God; believe also in me.</p>
+    </div>
+  </div>
+
+
+
+</div>
+
+</body>
+</html>
